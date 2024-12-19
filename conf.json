@@ -114,9 +114,9 @@
         "align": "left",
         "links": [
           {
-            "name": "Portfolio",
-            "url": "https://cancellek.com",
-            "icon": "mdi:web"
+            "name": "youtube",
+            "url": "https://www.youtube.com/",
+            "icon": "simple-icons:youtube"
           },
           {
             "name": "ArchLinux",
@@ -129,9 +129,9 @@
             "icon": "simple-icons:openai"
           },
           {
-            "name": "OCI",
-            "url": "https://www.oracle.com/cloud/",
-            "icon": "simple-icons:oracle"
+            "name": "MonkeyType",
+            "url": "https://monkeytype.com/",
+            "icon": "simple-icons:monkeytype"
           }
         ]
       },
