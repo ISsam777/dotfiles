@@ -49,10 +49,9 @@ map(
    "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
    { desc = "telescope find all files" }
 )
+vim.api.nvim_set_keymap("n", "<leader>o", ":Telescope opener<cr>", { noremap = true, silent = true })
 -- whichkey
 map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
--- Oil
-vim.keymap.set("n", "<leader>o", "<CMD> Telescope opener <CR>", { desc = "Open parent directory" })
 
 -- todo-comments
 vim.keymap.set("n", "]t", function()

@@ -10,7 +10,7 @@ BBlue='\033[1;34m'  BPurple='\033[1;35m' BCyan='\033[1;36m'  BWhite='\033[1;37m'
 echo -e ${BBlue}"\n [*] Installing dependencies......."
 
 pacman -S dragon-drop-git
-pacman -S kitty yazi fish rofi polybar picom neovim fzf lazygit exa zoxide                 
+pacman -S kitty yazi fish rofi polybar picom neovim fzf lazygit exa zoxide starship                 
 
 #### install fonts ----------------------------
 
