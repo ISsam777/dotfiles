@@ -6,5 +6,12 @@ return {
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
    },
-   --TODO
+   -- BUG:
+   -- FIX:
+   -- TODO:
+   -- HACK:
+   -- WARN:
+   -- PERF:
+   -- TEST:
+   -- NOTE:
 }

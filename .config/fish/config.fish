@@ -1,6 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
 ############################################
 function fish_greeting
 	#colorscript random
@@ -55,9 +52,11 @@ end
 
 alias kbd='sudo kanata -c ~/.config/kanata.kbd'
 alias y='yazi'
-alias cls='clear'
 alias rsh='redshift -l 33.38545:6.80422'
+alias ce="du -a ~/dotfiles/ | awk '{print $2}'|fzf|xargs -r $EDITOR" 
+alias screenshot="~/dotfiles/.config/rofi/applets/bin/screenshot.sh"
 alias copy='xclip -sel clip < '
+alias bkmrk="~/bookmark/bkmrks.sh"
 ##########################################
 # Set up fzf key bindings
 set fish_greeting
@@ -66,3 +65,5 @@ starship init fish | source
 thefuck --alias | source
 set -gx EDITOR nvim 
 
+bind \e, begin-selection
+bind \e. end-selection
