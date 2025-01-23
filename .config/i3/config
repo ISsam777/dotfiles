@@ -186,12 +186,11 @@ exec_always --no-startup-id picom -b
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always nitrogen --restore 
 exec --no-startup-id i3-msg 'workspace 10; exec kitty -e kanata --cfg ~/.config/kanata.kbd '
-exec --no-startup-id i3-msg 'workspace 3; exec firefox'
-exec --no-startup-id i3-msg 'workspace 2; exec kitty'
+
 # Review the lines below and append to ~/.config/i3/config
 
 #lockscreen
-bindsym  $mod+Shift+u exec betterlockscreen -l
+bindsym  $mod+Shift+u exec betterlockscreen -l dimblur  
 # Review the lines below and append to ~/.config/i3/config
 
 ## Volume control

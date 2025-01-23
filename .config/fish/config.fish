@@ -1,7 +1,12 @@
 ############################################
 function fish_greeting
-	#colorscript random
+    #disable fish greeting
 end 	
+
+function gtype
+	i3-msg 'workspace 1; exec kitty -c ~/gtypist.conf -e gtypist'
+end
+
 # ~/.config/fish/functions/fzf.fish
 function fzf --wraps="fzf"
     # Paste contents of preferred variant here
@@ -48,22 +53,21 @@ end
         echo "'$file' is not a valid file"
     end
 end
-##                  ##                        ##
-
+#################################################################/ALIASES/##########################################################################################
 alias kbd='sudo kanata -c ~/.config/kanata.kbd'
 alias y='yazi'
 alias rsh='redshift -l 33.38545:6.80422'
-alias ce="du -a ~/dotfiles/ | awk '{print $2}'|fzf|xargs -r $EDITOR" 
 alias screenshot="~/dotfiles/.config/rofi/applets/bin/screenshot.sh"
 alias copy='xclip -sel clip < '
-alias bkmrk="~/bookmark/bkmrks.sh"
+alias get='axel -n 10 $(xclip -o)'
+# ls and cd alternarive
+alias ls='exa'
+alias cd='z'
+# dotfiles config files and scripts navigation
+alias ce="du -a ~/dotfiles/ | awk '{print $2}'|fzf|xargs -r $EDITOR" 
 ##########################################
 # Set up fzf key bindings
 set fish_greeting
 zoxide init fish | source
 starship init fish | source
-thefuck --alias | source
 set -gx EDITOR nvim 
-
-bind \e, begin-selection
-bind \e. end-selection

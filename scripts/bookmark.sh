@@ -16,7 +16,7 @@ chess=https://www.chess.com/home
 besoccer=https://www.besoccer.com/
 networkTechnician=https://www.netacad.com/career-paths/network-technician?courseLang=en-US
 
-options="youtube\ngithub\nreddit\ngpt\ndiscord\narchwiki\nmonkeyType\nchess\ntyping\ntypingClub\njs_toturial\nrust_toturial\nnetworkTechnician\nverge\nbesoccer"
+options="youtube\ngithub\nreddit\ngpt\ndiscord\narchwiki\nmonkeyType\nchess\ntyping\ntypingClub\nhabitica\njs_toturial\nrust_toturial\nnetworkTechnician\nverge\nbesoccer"
 ###################################################
 
 COMMAND=$(printf "$options"|rofi  -dmenu -p "bookmarks")
@@ -37,5 +37,6 @@ case $COMMAND in
    chess) firefox $chess;;
    besoccer) firefox $besoccer;;
    networkTechnician) firefox $networkTechnician;;
+   habitica) firefox https://habitica.com/;;
    *)echo "invalid";exit 1;;	
 esac
