@@ -16,7 +16,7 @@ pacman -S i3 betterlockscreen kitty yazi fish rofi polybar picom neovim fzf lazy
 
 echo -e ${BGreen}"\n [*] Installing fonts......."
 
-pacman -S ttf-jetbrains-mono-nerd ttf-dejavu-nerd
+pacman -S ttf-jetbrains-mono-nerd ttf-dejavu-nerd ttf-hack-nerd
 
 ### synching files ----------------------------
 
