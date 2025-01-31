@@ -54,7 +54,7 @@ end
     end
 end
 #################################################################/ALIASES/##########################################################################################
-alias kbd='sudo kanata -c ~/.config/kanata.kbd'
+alias kbd='kanata -c ~/.config/kanata.kbd'
 alias y='yazi'
 alias rsh='redshift -l 33.38545:6.80422'
 alias screenshot="~/dotfiles/.config/rofi/applets/bin/screenshot.sh"

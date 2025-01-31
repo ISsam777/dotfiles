@@ -167,8 +167,28 @@ gaps inner 10px
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.
 gaps outer 15px
-gaps top 50px
+gaps top 15px
 
+bar {
+    status_command i3status 
+    position top
+    workspace_min_width 24
+    padding 2px 8px 2px 8px
+    strip_workspace_numbers yes
+    font pango:DejaVu Sans Mono 13
+    separator_symbol "  "
+
+    	colors {
+	background #1a1b26
+	statusline #c0caf5
+	separator #a9b1d6
+	# colour of border, background, and text
+	focused_workspace  #7aa2f7 #7aa2f7   #1a1b26
+	active_workspace #141c21 #141c21 #93a1a1
+	inactive_workspace #141c21 #141c21 #93a1a1
+	urgent_workspace #141c21 #f7768e #1a1b26
+	}
+}
 #################
 bindsym $mod+r mode "resize"
 
@@ -182,10 +202,10 @@ exec xset s noblank
 exec xset s off 
 exec xset -dpms
 exec xinput disable 10
+exec dunst
+exec --no-startup-id kanata -c /home/issam/.config/kanata.kbd
 exec_always --no-startup-id picom -b
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always nitrogen --restore 
-exec --no-startup-id i3-msg 'workspace 10; exec kitty -e kanata --cfg ~/.config/kanata.kbd '
 
 # Review the lines below and append to ~/.config/i3/config
 
