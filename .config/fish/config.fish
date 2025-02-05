@@ -2,23 +2,11 @@
 function fish_greeting
     #disable fish greeting
 end 	
+set -Ux FZF_DEFAULT_OPTS "
+  --color=bg+:#1a1b26,bg:#1a1b26,spinner:#f7768e,hl:#f7768e
+  --color=fg:#a9b1d6,header:#bb9af7,info:#7aa2f7,pointer:#7aa2f7
+  --color=marker:#7aa2f7,fg+:#a9b1d6,prompt:#bb9af7,hl+:#f7768e"
 
-function gtype
-	i3-msg 'workspace 1; exec kitty -c ~/gtypist.conf -e gtypist'
-end
-
-# ~/.config/fish/functions/fzf.fish
-function fzf --wraps="fzf"
-    # Paste contents of preferred variant here
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
---color=selected-bg:#45475a \
---multi"
-    command fzf
-end
-####################################
 ######### Aliasles #######################
 #ex archiver#
    function ex -a file
@@ -53,21 +41,24 @@ end
         echo "'$file' is not a valid file"
     end
 end
+
+function dot
+	
+ fd . ~/dotfiles/.config/ |fzf --preview='bat {}'|xargs -r nvim  
+end
 #################################################################/ALIASES/##########################################################################################
 alias kbd='kanata -c ~/.config/kanata.kbd'
-alias y='yazi'
 alias rsh='redshift -l 33.38545:6.80422'
-alias screenshot="~/dotfiles/.config/rofi/applets/bin/screenshot.sh"
-alias copy='xclip -sel clip < '
-alias get='axel -n 10 $(xclip -o)'
+alias get='aria2c  $(xclip -o)'
+alias y='yazi'
 # ls and cd alternarive
 alias ls='exa'
 alias cd='z'
 # dotfiles config files and scripts navigation
-alias ce="du -a ~/dotfiles/ | awk '{print $2}'|fzf|xargs -r $EDITOR" 
 ##########################################
-# Set up fzf key bindings
-set fish_greeting
 zoxide init fish | source
 starship init fish | source
 set -gx EDITOR nvim 
+export BAT_THEME="tokyonight_night"
+fzf_configure_bindings --directory=\ec
+bind \er fish_vi_key_bindings

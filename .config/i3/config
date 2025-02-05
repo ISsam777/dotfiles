@@ -43,6 +43,7 @@ bindsym $mod+Shift+d exec ~/.config/rofi/powermenu/type-2/powermenu.sh
 bindsym $mod+o exec  bookmark.sh
 bindsym $mod+i exec  passmenu
 bindsym $mod+t exec screenshot
+bindsym control+o exec add-link.sh 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -167,28 +168,28 @@ gaps inner 10px
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.
 gaps outer 15px
-gaps top 15px
+gaps top 50px
 
-bar {
-    status_command i3status 
-    position top
-    workspace_min_width 24
-    padding 2px 8px 2px 8px
-    strip_workspace_numbers yes
-    font pango:DejaVu Sans Mono 13
-    separator_symbol "  "
-
-    	colors {
-	background #1a1b26
-	statusline #c0caf5
-	separator #a9b1d6
-	# colour of border, background, and text
-	focused_workspace  #7aa2f7 #7aa2f7   #1a1b26
-	active_workspace #141c21 #141c21 #93a1a1
-	inactive_workspace #141c21 #141c21 #93a1a1
-	urgent_workspace #141c21 #f7768e #1a1b26
-	}
-}
+# bar {
+#     status_command i3status 
+#     position top
+#     workspace_min_width 24
+#     padding 2px 8px 2px 8px
+#     strip_workspace_numbers yes
+#     font pango:DejaVu Sans Mono 13
+#     separator_symbol "  "
+#
+#     	colors {
+# 	background #1a1b26
+# 	statusline #7aa2f7 
+# 	separator #a9b1d6
+# 	# colour of border, background, and text
+# 	focused_workspace  #7aa2f7 #7aa2f7   #1a1b26
+# 	active_workspace #141c21 #141c21  #c0caf5
+# 	inactive_workspace #141c21 #141c21 #c0caf5
+# 	urgent_workspace #141c21 #f7768e #1a1b26
+# 	}
+# }
 #################
 bindsym $mod+r mode "resize"
 
@@ -203,6 +204,7 @@ exec xset s off
 exec xset -dpms
 exec xinput disable 10
 exec dunst
+exec --no-startup-id polybar -r  
 exec --no-startup-id kanata -c /home/issam/.config/kanata.kbd
 exec_always --no-startup-id picom -b
 exec_always nitrogen --restore 
@@ -243,7 +245,6 @@ bindsym XF86AudioLowerVolume exec --no-startup-id $volumepath/volume -n -t $stat
 bindsym XF86AudioMute        exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
 # Special keys to adjust brightness via brightnessctl
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+   
 # change language layout Shift+alt
 exec_always --no-startup-id "setxkbmap -layout us,ara -option 'grp:alt_shift_toggle'" 
-

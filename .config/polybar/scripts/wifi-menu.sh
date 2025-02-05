@@ -51,7 +51,7 @@ if [ "$1" == "--select" ]; then
 else
     # Mostrar la red actual en Polybar o "No conectado" si no está conectado a ninguna red
     if [ -n "$current_network" ]; then
-        echo "   $current_network"
+        echo "  $current_network"
     else
         echo " 睊 No connection"
     fi

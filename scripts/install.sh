@@ -7,20 +7,19 @@ BBlue='\033[1;34m'  BPurple='\033[1;35m' BCyan='\033[1;36m'  BWhite='\033[1;37m'
 
 #### install dependencies -----------------------
 
-echo -e ${BBlue}"\n [*] Installing packages......."
+echo -e ${BGreen}"\n [*] Installing packages......."
 
 pacman -Syu
-pacman -S dragon-drop-git
-pacman -S i3 betterlockscreen kitty yazi fish rofi polybar picom neovim fzf lazygit exa zoxide starship zathura zathura-pdf-mupdf autotiling axel yt-dlp firefox obsidian 
+pacman -S rust perl julia lua lua51 luarocks 
+pacman -S i3 betterlockscreen kitty yazi fish rofi polybar picom neovim fzf lazygit exa zoxide starship zathura zathura-pdf-mupdf autotiling aria2 tmux yt-dlp firefox obsidian 
 #### install fonts ----------------------------
 
 echo -e ${BGreen}"\n [*] Installing fonts......."
 
-pacman -S ttf-jetbrains-mono-nerd ttf-dejavu-nerd ttf-hack-nerd
-
+pacman -S nerd-fonts
 ### synching files ----------------------------
 
-echo -e ${BPurple}"\n [*] synching files ......"
+echo -e ${BGeen}"\n [*] synching files ......"
 
 pacman -S stow
-stow --adopt .
+stow .
