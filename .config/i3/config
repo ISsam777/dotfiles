@@ -202,6 +202,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+y exec kitty -e yazi
 bindsym $mod+g exec firefox 
 ### Autostart
+exec prayer-times --latitude  33.38545 --longitude 6.80422 daemon
 exec_always autotiling -w 1 2 3  
 exec xset s noblank
 exec xset s off 

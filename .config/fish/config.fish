@@ -61,4 +61,5 @@ starship init fish | source
 set -gx EDITOR nvim 
 export BAT_THEME="tokyonight_night"
 fzf_configure_bindings --directory=\ec
-bind \er fish_vi_key_bindings
+bind \ej fish_vi_key_bindings
+bind \ek fish_default_key_bindings
