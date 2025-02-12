@@ -86,7 +86,7 @@
 
 
 # BEGIN_KITTY_THEME
-# Tokyo Night Day
+# Kanagawa_dragon
 include current-theme.conf
 # END_KITTY_THEME
 #disable yes or no message

@@ -1,7 +1,8 @@
 ############################################
 function fish_greeting
-    #disable fish greeting
-end 	
+	#disable fish greeting
+end
+	
 set -Ux FZF_DEFAULT_OPTS "
   --color=bg+:#1a1b26,bg:#1a1b26,spinner:#f7768e,hl:#f7768e
   --color=fg:#a9b1d6,header:#bb9af7,info:#7aa2f7,pointer:#7aa2f7
@@ -41,25 +42,20 @@ set -Ux FZF_DEFAULT_OPTS "
         echo "'$file' is not a valid file"
     end
 end
-
-function dot
-	
- fd . ~/dotfiles/.config/ |fzf --preview='bat {}'|xargs -r nvim  
-end
 #################################################################/ALIASES/##########################################################################################
 alias kbd='kanata -c ~/.config/kanata.kbd'
 alias rsh='redshift -l 33.38545:6.80422'
 alias get='aria2c  $(xclip -o)'
 alias y='yazi'
+alias r='ranger'
 # ls and cd alternarive
 alias ls='exa'
 alias cd='z'
 # dotfiles config files and scripts navigation
+alias vi='fd -H -tf -tl . '/home/issam/dotfiles/' |fzf|xargs -r nvim'
 ##########################################
 zoxide init fish | source
 starship init fish | source
 set -gx EDITOR nvim 
 export BAT_THEME="tokyonight_night"
-fzf_configure_bindings --directory=\ec
-bind \ej fish_vi_key_bindings
-bind \ek fish_default_key_bindings
+set -U fish_key_bindings fish_vi_key_bindings

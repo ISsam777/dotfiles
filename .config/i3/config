@@ -10,12 +10,12 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 # You can also use any non-zero value if you'd like to have a border
 # You can also use any non-zero value if you'd like to have a border
-default_border pixel 1
+default_border pixel 2
 #border indicator on windows:
 
 
 # thin borders
-hide_edge_borders smart
+# hide_edge_borders smart
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -161,9 +161,9 @@ mode "resize" {
 
 #################Colors#########################################
 
- client.focused           #9aa5ce #364A82 #c0caf5 #9aa5ce   #9aa5ce
- client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
- client.unfocused         #16161d #16161d #c0caf5 #16161d   #16161d
+ client.focused           #7aa2f7 #7aa2f7 #c0caf5 #7aa2f7   #7aa2f7 
+ client.focused_inactive  #414868 #414868 #c0caf5 #414868   #414868
+ client.unfocused         #414868 #414868 #c0caf5 #414868   #414868
 
 ########gaps###############################################
 # Configure 5px of space between windows and to the screen edges.
@@ -201,6 +201,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bindsym $mod+y exec kitty -e yazi
 bindsym $mod+g exec firefox 
+bindsym $mod+Tab exec rofi -show window
 ### Autostart
 exec prayer-times --latitude  33.38545 --longitude 6.80422 daemon
 exec_always autotiling -w 1 2 3  
@@ -249,7 +250,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id $volumepath/volume -n -t $stat
 bindsym XF86AudioLowerVolume exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig down $volumestep
 bindsym XF86AudioMute        exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
 # Special keys to adjust brightness via brightnessctl
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl set 5%+   
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%- && dunstify  -r 9993   $(echo "  🔅$(light|awk '{print int ($1)}')%") 
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+ && dunstify    -r 9993   $(echo "  🔅$(light|awk '{print int ($1)}')%") 
 # change language layout Shift+alt
-exec_always --no-startup-id "setxkbmap -layout us,ara -option 'grp:alt_shift_toggle'" 
+exec_always --no-startup-id "setxkbmap -layout us,ara -option 'grp:alt_shift_toggle'"

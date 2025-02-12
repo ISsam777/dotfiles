@@ -22,3 +22,11 @@ https://www.geeksforgeeks.org/operating-systems/?ref=shm
 https://zettelkasten.de/introduction/
 https://en.wikipedia.org/wiki/Hello
 https://www.instagram.com/
+https://habitica.com/
+https://x.com/home
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
+https://www.w3schools.com/java/default.asp
+https://chat.deepseek.com/
