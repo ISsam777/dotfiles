@@ -784,3 +784,94 @@ btop++ needs an interactive shell to run.
 
 2025/02/11 (22:38:58) | ===> btop++ v.1.4.0
 2025/02/11 (22:38:58) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/12 (21:11:27) | ===> btop++ v.1.4.0
+2025/02/12 (21:11:27) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/13 (12:42:35) | ===> btop++ v.1.4.0
+2025/02/13 (12:42:35) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/13 (22:38:02) | ===> btop++ v.1.4.0
+2025/02/13 (22:38:02) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/14 (02:45:30) | ===> btop++ v.1.4.0
+2025/02/14 (02:45:30) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/14 (04:13:27) | ===> btop++ v.1.4.0
+2025/02/14 (04:13:27) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/14 (15:10:28) | ===> btop++ v.1.4.0
+2025/02/14 (15:10:28) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/14 (15:15:02) | ===> btop++ v.1.4.0
+2025/02/14 (15:15:02) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/14 (15:19:08) | ===> btop++ v.1.4.0
+2025/02/14 (15:19:08) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/15 (16:46:20) | ===> btop++ v.1.4.0
+2025/02/15 (16:46:20) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/15 (17:58:25) | ===> btop++ v.1.4.0
+2025/02/15 (17:58:25) | WARNING: Intel GPU: Failed to initialize PMU
+2025/02/15 (17:58:43) | ERROR: Couldn't determine terminal size of "STDOUT_FILENO"!
+2025/02/15 (17:58:43) | ERROR: Couldn't determine terminal size of "/dev/tty"!
+
+2025/02/16 (14:41:31) | ===> btop++ v.1.4.0
+2025/02/16 (14:41:31) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/16 (15:44:50) | ===> btop++ v.1.4.0
+2025/02/16 (15:44:50) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/16 (16:23:16) | ===> btop++ v.1.4.0
+2025/02/16 (16:23:16) | WARNING: Intel GPU: Failed to initialize PMU
+2025/02/16 (16:35:14) | INFO: Logger set to INFO
+2025/02/16 (16:35:14) | INFO: Logger set to DEBUG
+
+2025/02/16 (16:39:30) | ===> btop++ v.1.4.0
+2025/02/16 (16:39:30) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/16 (18:12:16) | ===> btop++ v.1.4.0
+2025/02/16 (18:12:16) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/18 (14:57:21) | ===> btop++ v.1.4.0
+2025/02/18 (14:57:21) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/18 (18:53:23) | ===> btop++ v.1.4.0
+2025/02/18 (18:53:23) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/18 (22:22:09) | ===> btop++ v.1.4.0
+2025/02/18 (22:22:09) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (00:45:57) | ===> btop++ v.1.4.0
+2025/02/19 (00:45:57) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (00:46:33) | ===> btop++ v.1.4.0
+2025/02/19 (00:46:33) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (11:44:22) | ===> btop++ v.1.4.0
+2025/02/19 (11:44:22) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (11:45:22) | ===> btop++ v.1.4.0
+2025/02/19 (11:45:22) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (22:40:31) | ===> btop++ v.1.4.0
+2025/02/19 (22:40:31) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (22:45:59) | ===> btop++ v.1.4.0
+2025/02/19 (22:45:59) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (22:46:49) | ===> btop++ v.1.4.0
+2025/02/19 (22:46:49) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (22:48:59) | ===> btop++ v.1.4.0
+2025/02/19 (22:48:59) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (22:55:05) | ===> btop++ v.1.4.0
+2025/02/19 (22:55:05) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (22:55:48) | ===> btop++ v.1.4.0
+2025/02/19 (22:55:48) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/02/19 (23:08:10) | ===> btop++ v.1.4.0
+2025/02/19 (23:08:10) | WARNING: Intel GPU: Failed to initialize PMU

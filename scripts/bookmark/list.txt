@@ -30,3 +30,5 @@ https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
 https://www.w3schools.com/java/default.asp
 https://chat.deepseek.com/
+https://www.tybaa.com/
+https://dev-web-hazel.vercel.app/

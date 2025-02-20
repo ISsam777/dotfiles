@@ -15,6 +15,8 @@ set -Ux FZF_DEFAULT_OPTS "
         switch "$file"
             case "*.tar.bz2"
                 tar xjf $file
+            case "*.tar.xz"
+                tar xf $file
             case "*.tar.gz"
                 tar xzf $file
             case "*.bz2"
@@ -42,6 +44,24 @@ set -Ux FZF_DEFAULT_OPTS "
         echo "'$file' is not a valid file"
     end
 end
+function rga-fzf
+    set RG_PREFIX 'rga --files-with-matches'
+    if test (count $argv) -gt 1
+        set RG_PREFIX "$RG_PREFIX $argv[1..-2]"
+    end
+    set -l file $file
+    set file (
+        FZF_DEFAULT_COMMAND="$RG_PREFIX '$argv[-1]'" \
+        fzf --sort \
+            --preview='test ! -z {} && \
+                rga --pretty --context 5 {q} {}' \
+            --phony -q "$argv[-1]" \
+            --bind "change:reload:$RG_PREFIX {q}" \
+            --preview-window='50%:wrap'
+    ) && \
+    echo "opening $file" && \
+    open "$file"
+end
 #################################################################/ALIASES/##########################################################################################
 alias kbd='kanata -c ~/.config/kanata.kbd'
 alias rsh='redshift -l 33.38545:6.80422'
@@ -51,11 +71,13 @@ alias r='ranger'
 # ls and cd alternarive
 alias ls='exa'
 alias cd='z'
+alias ps2='/home/issam/Downloads/pcsx2-v2.2.0-linux-appimage-x64-Qt.AppImage'
 # dotfiles config files and scripts navigation
-alias vi='fd -H -tf -tl . '/home/issam/dotfiles/' |fzf|xargs -r nvim'
+alias co='fd -H -tf -tl --no-require-git . '/home/issam/dotfiles/' |fzf|xargs -r nvim'
+alias vi='sudo nvim --clean'
 ##########################################
 zoxide init fish | source
 starship init fish | source
 set -gx EDITOR nvim 
 export BAT_THEME="tokyonight_night"
-set -U fish_key_bindings fish_vi_key_bindings
+set -gx BROWSER firefox

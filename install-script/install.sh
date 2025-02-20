@@ -13,8 +13,8 @@ pacman -S --needed $(cat mypkg.txt)
 
 ### synching dotfiles ----------------------------
 echo -e ${BRed}"\n [*] Cloning dotfiles......."
-git clone --bare https://github.com/ISsam777/dotfiles
+git clone  https://github.com/ISsam777/dotfiles
 cd dotfiles
 
 echo -e ${BBlue}"\n [*] synching files ......"
-stow .config/
+stow .

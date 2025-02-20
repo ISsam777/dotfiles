@@ -42,7 +42,6 @@ bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+d exec ~/.config/rofi/powermenu/type-2/powermenu.sh
 bindsym $mod+o exec  bookmark.sh
 bindsym $mod+i exec  passmenu
-bindsym $mod+t exec screenshot
 bindsym control+o exec add-link.sh 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -171,8 +170,8 @@ gaps inner 10px
 
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.
-gaps outer 15px
-gaps top 50px
+gaps outer 10px
+gaps top 40px
 
 # bar {
 #     status_command i3status 
@@ -199,11 +198,12 @@ bindsym $mod+r mode "resize"
 
 #Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bindsym $mod+y exec kitty -e yazi
 bindsym $mod+g exec firefox 
 bindsym $mod+Tab exec rofi -show window
+bindsym $mod+t exec thunar
+bindsym $mod+y exec kitty -e yazi
+bindsym Print exec screenshot.sh 
 ### Autostart
-exec prayer-times --latitude  33.38545 --longitude 6.80422 daemon
 exec_always autotiling -w 1 2 3  
 exec xset s noblank
 exec xset s off 

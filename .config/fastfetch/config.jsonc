@@ -34,8 +34,8 @@
         "break",
         {
             "type": "os",
-            "key": " ",
-            "keyColor": "34",  // = color4
+            "key": "󰣇 ",
+            "keyColor": "34"  // = color4
         },
         {
             "type": "kernel",
