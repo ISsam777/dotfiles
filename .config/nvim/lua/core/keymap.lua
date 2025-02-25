@@ -15,11 +15,10 @@ map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "general save file" })
-map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "general copy whole file" })
+map("v", "Y", "<cmd>'<,'>y+<CR>", { desc = "general copy selected text " })
 
 map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "toggle line number" })
 map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
-map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "toggle nvcheatsheet" })
 
 map("n", "<leader>fm", function()
    require("conform").format({ lsp_fallback = true })
