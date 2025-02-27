@@ -67,7 +67,6 @@ alias kbd='kanata -c ~/.config/kanata.kbd'
 alias rsh='redshift -l 33.38545:6.80422'
 alias get='aria2c  $(xclip -o)'
 alias y='yazi'
-alias r='ranger'
 # ls and cd alternarive
 alias ls='exa'
 alias cd='z'

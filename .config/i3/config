@@ -170,7 +170,7 @@ gaps inner 10px
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.
 gaps outer 10px
-gaps top 40px
+gaps top 50px
 
 # bar {
 #     status_command i3status 

@@ -38,8 +38,8 @@ dark = "tokyo-night"
 # count_selected = { fg = "white", bg = "yellow" }
 #
 # # Border
-border_symbol = " "
-# border_style  = { fg = "cyan" }
+border_symbol = ""
+border_style  = { fg = "white" }
 #
 # # Highlighting
 # syntect_theme = ""
