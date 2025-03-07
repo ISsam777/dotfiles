@@ -17,8 +17,8 @@ map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "general save file" })
 map("v", "Y", "<cmd>'<,'>y+<CR>", { desc = "general copy selected text " })
 
-map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "toggle line number" })
-map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
+map("n", "<leader>nn", "<cmd>set nu!<CR>", { desc = "toggle line number" })
+map("n", "<leader>nr", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
 
 map("n", "<leader>fm", function()
    require("conform").format({ lsp_fallback = true })
@@ -104,7 +104,7 @@ map("n", "<A-p>", "<Cmd>BufferPin<CR>", opts)
 --                 :BufferGotoUnpinned
 
 -- Close buffer
-map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
+map("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)
 
 -- Wipeout buffer
 --                 :BufferWipeout

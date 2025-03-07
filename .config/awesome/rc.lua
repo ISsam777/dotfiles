@@ -586,6 +586,8 @@ end)
 autorun = true
 autorunApps = {
 	"picom -b",
+	"kanata -c /home/issam/.config/kanata.kbd",
+	"nitrogen --restore",
 }
 if autorun then
 	for app = 1, #autorunApps do

@@ -71,12 +71,12 @@ alias y='yazi'
 alias ls='exa'
 alias cd='z'
 alias ps2='/home/issam/Downloads/pcsx2-v2.2.0-linux-appimage-x64-Qt.AppImage'
-# dotfiles config files and scripts navigation
-alias co='fd -H -tf -tl --no-require-git . '/home/issam/dotfiles/' |fzf|xargs -r nvim'
-alias vi='sudo nvim --clean'
 ##########################################
 zoxide init fish | source
 starship init fish | source
 set -gx EDITOR nvim 
 export BAT_THEME="tokyonight_night"
 set -gx BROWSER firefox
+alias paste='xclip -o -sel clip'
+alias copy='xclip -sel clip'
+alias vim='nvim --clean -c ":colorscheme sorbet"'
