@@ -1,6 +1,8 @@
 #!/bin/bash
 link (){
-	echo $(xclip -o) >> $path
+	notify-send "enter a name"
+	name =$(rofi -dmenu -p)
+	echo $name $(xclip -o) >> $path
 }
 
 path='/home/issam/dotfiles/scripts/bookmark/list.txt'

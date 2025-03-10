@@ -1,43 +1,38 @@
-https://github.com/
-https://archlinux.org/
-https://www.reddit.com/
+github https://github.com/
+archwiki https://archlinux.org/
+reddit https://www.reddit.com/
 https://www.w3schools.com/js/default.asp
-https://doc.rust-lang.org/book/title-page.html
+rust-doc https://doc.rust-lang.org/book/title-page.html
 https://www.typing.com/
 https://www.typingclub.com/
-https://monkeytype.com/
-https://www.theverge.com/
-https://www.chess.com/home
-https://www.besoccer.com/
+monkeytype https://monkeytype.com/
+theverge https://www.theverge.com/
+chess https://www.chess.com/home
+besoccer https://www.besoccer.com/
 https://www.netacad.com/career-paths/network-technician?courseLang=en-US
 https://www.frontendmentor.io/home
 https://linuxhandbook.com/if-else-bash/
-https://chatgpt.com/
-https://vercel.com/issam777s-projects
+chatgpt https://chatgpt.com/
+vercel https://vercel.com/issam777s-projects
 https://github.com/tokyo-night/tokyo-night-vscode-theme
-https://www.figma.com/files/team/1390303585892001032/recents-and-sharing?fuid=1390303583184679250
-https://www.nerdfonts.com/
-https://www.youtube.com/
-https://www.geeksforgeeks.org/operating-systems/?ref=shm
+figma https://www.figma.com/files/team/1390303585892001032/recents-and-sharing?fuid=1390303583184679250
+nerdfonts https://www.nerdfonts.com/
+youtube https://www.youtube.com/
+os-tutor https://www.geeksforgeeks.org/operating-systems/?ref=shm
 https://zettelkasten.de/introduction/
-https://en.wikipedia.org/wiki/Hello
-https://www.instagram.com/
-https://habitica.com/
-https://x.com/home
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-https://css-tricks.com/snippets/css/complete-guide-grid/
-https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts
-https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
-https://www.w3schools.com/java/default.asp
-https://chat.deepseek.com/
-https://www.tybaa.com/
+instagram https://www.instagram.com/
+habitica https://habitica.com/
+cssFlex https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+cssGrid https://css-tricks.com/snippets/css/complete-guide-grid/
+kevinpowell https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts
+dev-mozilla https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
+java-doc https://www.w3schools.com/java/default.asp
+deepseek https://chat.deepseek.com/
+tybaa https://www.tybaa.com/
 https://dev-web-hazel.vercel.app/
-https://chatgpt.com/share/67b8e555-c958-8004-805e-75b213587304
-https://www.cyberciti.biz/faq/add-configure-set-up-static-ip-address-on-debianlinux/
 https://help.obsidian.md/Getting+started/Download+and+install+Obsidian
-https://www.univ-eloued.dz/ar/
-https://getbootstrap.com/docs/5.3/getting-started/introduction/
-https://www.facebook.com/
-https://discord.com/channels/@me
-https://www.busuu.com/dashboard/timeline/b1
-https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
+univ-eloued https://www.univ-eloued.dz/ar/
+facebook https://www.facebook.com/
+discord https://discord.com/channels/@me
+busuu https://www.busuu.com/dashboard/timeline/b1
+nytimes https://www.nytimes.com/
