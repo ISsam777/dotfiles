@@ -80,3 +80,4 @@ set -gx BROWSER firefox
 alias paste='xclip -o -sel clip'
 alias copy='xclip -sel clip'
 alias vim='nvim --clean -c ":colorscheme sorbet"'
+batman --export-env | source

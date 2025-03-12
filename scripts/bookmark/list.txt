@@ -1,17 +1,14 @@
 github https://github.com/
 archwiki https://archlinux.org/
 reddit https://www.reddit.com/
-https://www.w3schools.com/js/default.asp
+js-docs https://www.w3schools.com/js/default.asp
 rust-doc https://doc.rust-lang.org/book/title-page.html
-https://www.typing.com/
-https://www.typingclub.com/
 monkeytype https://monkeytype.com/
 theverge https://www.theverge.com/
 chess https://www.chess.com/home
 besoccer https://www.besoccer.com/
 https://www.netacad.com/career-paths/network-technician?courseLang=en-US
 https://www.frontendmentor.io/home
-https://linuxhandbook.com/if-else-bash/
 chatgpt https://chatgpt.com/
 vercel https://vercel.com/issam777s-projects
 https://github.com/tokyo-night/tokyo-night-vscode-theme
@@ -29,10 +26,16 @@ dev-mozilla https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/
 java-doc https://www.w3schools.com/java/default.asp
 deepseek https://chat.deepseek.com/
 tybaa https://www.tybaa.com/
-https://dev-web-hazel.vercel.app/
 https://help.obsidian.md/Getting+started/Download+and+install+Obsidian
 univ-eloued https://www.univ-eloued.dz/ar/
 facebook https://www.facebook.com/
 discord https://discord.com/channels/@me
 busuu https://www.busuu.com/dashboard/timeline/b1
 nytimes https://www.nytimes.com/
+hollow knight guide https://www.ign.com/wikis/hollow-knight/Walkthrough
+ztype https://zty.pe/
+database-GFG https://www.geeksforgeeks.org/database-design-ultimate-guide/
+create-db1 https://interestingengineering.com/lists/build-a-database-part-1
+create-db2 https://interestingengineering.com/lists/build-a-database-part-2
+create-db3 https://interestingengineering.com/lists/database-part-3-queries
+create-db4 https://interestingengineering.com/lists/build-a-database-part-4
