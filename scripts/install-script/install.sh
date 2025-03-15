@@ -9,12 +9,18 @@ BBlue='\033[1;34m'  BPurple='\033[1;35m' BCyan='\033[1;36m'  BWhite='\033[1;37m'
 echo -e ${BGreen}"\n [*] Installing packages......."
 
 pacman -Syu
-pacman -S --needed $(cat mypkg.txt)
+pacman -S --needed  $(cat pacman.txt)
+#AUR setup
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay -Syu
+yay -S --needed $(cat aur.txt)
+
 
 ### synching dotfiles ----------------------------
-echo -e ${BRed}"\n [*] Cloning dotfiles......."
-git clone  https://github.com/ISsam777/dotfiles
-cd dotfiles
+cd ../..
 
 echo -e ${BBlue}"\n [*] synching files ......"
 stow .

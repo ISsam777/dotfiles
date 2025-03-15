@@ -12,6 +12,7 @@ return {
       local telescope = require("telescope")
       local actions = require("telescope.actions")
       local transform_mod = require("telescope.actions.mt").transform_mod
+      require("telescope").load_extension("harpoon")
 
       -- or create your custom action
       local custom_actions = transform_mod({

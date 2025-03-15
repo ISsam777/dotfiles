@@ -39,3 +39,4 @@ create-db1 https://interestingengineering.com/lists/build-a-database-part-1
 create-db2 https://interestingengineering.com/lists/build-a-database-part-2
 create-db3 https://interestingengineering.com/lists/database-part-3-queries
 create-db4 https://interestingengineering.com/lists/build-a-database-part-4
+sqlite3-php https://www.sqlitetutorial.net/sqlite-php/
