@@ -8,7 +8,7 @@ theverge https://www.theverge.com/
 chess https://www.chess.com/home
 besoccer https://www.besoccer.com/
 https://www.netacad.com/career-paths/network-technician?courseLang=en-US
-https://www.frontendmentor.io/home
+frontEndMentor https://www.frontendmentor.io/home
 chatgpt https://chatgpt.com/
 vercel https://vercel.com/issam777s-projects
 https://github.com/tokyo-night/tokyo-night-vscode-theme
@@ -40,3 +40,6 @@ create-db2 https://interestingengineering.com/lists/build-a-database-part-2
 create-db3 https://interestingengineering.com/lists/database-part-3-queries
 create-db4 https://interestingengineering.com/lists/build-a-database-part-4
 sqlite3-php https://www.sqlitetutorial.net/sqlite-php/
+typeracer https://play.typeracer.com/
+php_projects https://hackr.io/blog/php-projects
+php-youtube https://www.youtube.com/watch?v=zZ6vybT1HQs&t=7653s

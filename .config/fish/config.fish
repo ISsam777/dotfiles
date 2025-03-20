@@ -67,17 +67,15 @@ alias kbd='kanata -c ~/.config/kanata.kbd'
 alias rsh='redshift -l 33.38545:6.80422'
 alias get='aria2c  $(xclip -o)'
 alias y='yazi'
-# ls and cd alternarive
 alias ls='exa'
 alias cd='z'
 alias ps2='/home/issam/Downloads/pcsx2-v2.2.0-linux-appimage-x64-Qt.AppImage'
+alias paste='xclip -o -sel clip'
+alias copy='xclip -sel clip'
+alias v='nvim --clean -c ":colorscheme sorbet"'
 ##########################################
 zoxide init fish | source
 starship init fish | source
 set -gx EDITOR nvim 
 export BAT_THEME="tokyonight_night"
-set -gx BROWSER firefox
-alias paste='xclip -o -sel clip'
-alias copy='xclip -sel clip'
-alias vim='nvim --clean -c ":colorscheme sorbet"'
 batman --export-env | source

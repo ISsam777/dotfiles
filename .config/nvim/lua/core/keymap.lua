@@ -17,8 +17,8 @@ map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "general save file" })
 map("v", "Y", "<cmd>'<,'>y+<CR>", { desc = "general copy selected text " })
 
-map("n", "<leader>nn", "<cmd>set nu!<CR>", { desc = "toggle line number" })
-map("n", "<leader>nr", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
+-- map("n", "<leader>nn", "<cmd>set nu!<CR>", { desc = "toggle line number" })
+-- map("n", "<leader>nr", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
 
 map("n", "<leader>fm", function()
    require("conform").format({ lsp_fallback = true })
@@ -28,9 +28,6 @@ map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP diagnostic locli
 -- Comment
 map("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
--- neotree
-
-map("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "toggle Neotree" })
 -- telescope
 map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", { desc = "telescope live grep" })
 map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "telescope find buffers" })
@@ -75,58 +72,43 @@ vim.keymap.set("n", "<C-S-l>", [[<cmd>horizontal resize -2<cr>]])
 --tab
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
+--harpoon
 
--- Move to previous/next
-map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", opts)
-map("n", "<A-.>", "<Cmd>BufferNext<CR>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>hh", function()
+   require("harpoon.ui").toggle_quick_menu()
+end, { desc = "harpoon menu" })
+vim.keymap.set({ "n", "v" }, "<leader>ha", function()
+   require("harpoon.mark").add_file()
+end, { desc = "add file to menu" })
 
--- Re-order to previous/next
-map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
-map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>h1", function()
+   require("harpoon.ui").nav_file(1)
+end, { desc = "nav file 1" })
 
--- Goto buffer in position...
-map("n", "<A-1>", "<Cmd>BufferGoto 1<CR>", opts)
-map("n", "<A-2>", "<Cmd>BufferGoto 2<CR>", opts)
-map("n", "<A-3>", "<Cmd>BufferGoto 3<CR>", opts)
-map("n", "<A-4>", "<Cmd>BufferGoto 4<CR>", opts)
-map("n", "<A-5>", "<Cmd>BufferGoto 5<CR>", opts)
-map("n", "<A-6>", "<Cmd>BufferGoto 6<CR>", opts)
-map("n", "<A-7>", "<Cmd>BufferGoto 7<CR>", opts)
-map("n", "<A-8>", "<Cmd>BufferGoto 8<CR>", opts)
-map("n", "<A-9>", "<Cmd>BufferGoto 9<CR>", opts)
-map("n", "<A-0>", "<Cmd>BufferLast<CR>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>h2", function()
+   require("harpoon.ui").nav_file(2)
+end, { desc = "nav file 2" })
 
--- Pin/unpin buffer
-map("n", "<A-p>", "<Cmd>BufferPin<CR>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>h3", function()
+   require("harpoon.ui").nav_file(3)
+end, { desc = "nav file 3" })
 
--- Goto pinned/unpinned buffer
---                 :BufferGotoPinned
---                 :BufferGotoUnpinned
+vim.keymap.set({ "n", "v" }, "<leader>h4", function()
+   require("harpoon.ui").nav_file(4)
+end, { desc = "nav file 4" })
 
--- Close buffer
-map("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>h5", function()
+   require("harpoon.ui").nav_file(5)
+end, { desc = "nav file 5" })
 
--- Wipeout buffer
---                 :BufferWipeout
+vim.keymap.set({ "n", "v" }, "<leader>h6", function()
+   require("harpoon.ui").nav_file(6)
+end, { desc = "nav file 6" })
 
--- Close commands
---                 :BufferCloseAllButCurrent
---                 :BufferCloseAllButPinned
---                 :BufferCloseAllButCurrentOrPinned
---                 :BufferCloseBuffersLeft
---                 :BufferCloseBuffersRight
+vim.keymap.set({ "n", "v" }, "<leader>n", function()
+   require("harpoon.ui").nav_next()
+end, { desc = "nav next" })
 
--- Magic buffer-picking mode
-map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
-map("n", "<C-s-p>", "<Cmd>BufferPickDelete<CR>", opts)
-
--- Sort automatically by...
-map("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
-map("n", "<Space>bn", "<Cmd>BufferOrderByName<CR>", opts)
-map("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
-map("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
-map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
-
--- Other:
--- :BarbarEnable - enables barbar (enabled by default)
--- :BarbarDisable - very bad command, should never be used
+vim.keymap.set({ "n", "v" }, "<leader>b", function()
+   require("harpoon.ui").nav_prev()
+end, { desc = "nav prev" })

@@ -1,3 +1,5 @@
 zen-browser-bin
 betterlockscreen
 xdman
+xampp
+mysql

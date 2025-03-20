@@ -21,7 +21,6 @@ bat
 sqlite
 kitty
 docker
-xampp
 git
 lazygit
 btop
