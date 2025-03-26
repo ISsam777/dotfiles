@@ -81,34 +81,37 @@ vim.keymap.set({ "n", "v" }, "<leader>ha", function()
    require("harpoon.mark").add_file()
 end, { desc = "add file to menu" })
 
-vim.keymap.set({ "n", "v" }, "<leader>h1", function()
+vim.keymap.set({ "n", "v" }, "<M-1>", function()
    require("harpoon.ui").nav_file(1)
 end, { desc = "nav file 1" })
 
-vim.keymap.set({ "n", "v" }, "<leader>h2", function()
+vim.keymap.set({ "n", "v" }, "<M-2>", function()
    require("harpoon.ui").nav_file(2)
 end, { desc = "nav file 2" })
 
-vim.keymap.set({ "n", "v" }, "<leader>h3", function()
+vim.keymap.set({ "n", "v" }, "<M-3>", function()
    require("harpoon.ui").nav_file(3)
 end, { desc = "nav file 3" })
 
-vim.keymap.set({ "n", "v" }, "<leader>h4", function()
+vim.keymap.set({ "n", "v" }, "<M-4>", function()
    require("harpoon.ui").nav_file(4)
 end, { desc = "nav file 4" })
 
-vim.keymap.set({ "n", "v" }, "<leader>h5", function()
+vim.keymap.set({ "n", "v" }, "<M-5>", function()
    require("harpoon.ui").nav_file(5)
 end, { desc = "nav file 5" })
 
-vim.keymap.set({ "n", "v" }, "<leader>h6", function()
+vim.keymap.set({ "n", "v" }, "<M-6>", function()
    require("harpoon.ui").nav_file(6)
 end, { desc = "nav file 6" })
 
-vim.keymap.set({ "n", "v" }, "<leader>n", function()
+vim.keymap.set({ "n", "v" }, "<M-.>", function()
    require("harpoon.ui").nav_next()
 end, { desc = "nav next" })
 
-vim.keymap.set({ "n", "v" }, "<leader>b", function()
+vim.keymap.set({ "n", "v" }, "<M-,>", function()
    require("harpoon.ui").nav_prev()
 end, { desc = "nav prev" })
+--buffers
+map("n", "<leader>bn", "<cmd>bNext<CR>", { desc = "buffer next" })
+map("n", "<leader>bb", "<cmd>bprevious<CR>", { desc = "buffer previous" })

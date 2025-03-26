@@ -2,8 +2,7 @@ return {
    "nvim-lualine/lualine.nvim",
    dependencies = { "nvim-tree/nvim-web-devicons" },
 
-   -- Eviline config for lualine
-   -- Author: shadmansaleh
+   -- Eviline config for lualine Author: shadmansaleh
    -- Credit: glepnir
    config = function()
       local lualine = require("lualine")
@@ -222,6 +221,8 @@ local colors = {
          padding = { left = 1 },
       })
 
+      --- NOTE: show macros in lualine -----
+      ---
       -- Now don't forget to initialize lualine
       lualine.setup(config)
       local function show_macro_recording()

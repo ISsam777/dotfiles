@@ -43,3 +43,6 @@ sqlite3-php https://www.sqlitetutorial.net/sqlite-php/
 typeracer https://play.typeracer.com/
 php_projects https://hackr.io/blog/php-projects
 php-youtube https://www.youtube.com/watch?v=zZ6vybT1HQs&t=7653s
+svelte https://svelte.dev/
+js-projects https://www.freecodecamp.org/news/javascript-projects-for-beginners/#heading-how-to-create-a-color-flipper
+js-30DAYS https://courses.wesbos.com/account/access/67e33b5c05585f952aba3a46
