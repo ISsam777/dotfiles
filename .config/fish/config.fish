@@ -73,6 +73,7 @@ alias ps2='/home/issam/Downloads/pcsx2-v2.2.0-linux-appimage-x64-Qt.AppImage'
 alias paste='xclip -o -sel clip'
 alias copy='xclip -sel clip'
 alias v='nvim --clean -c ":colorscheme sorbet"'
+alias c='clear'
 ##########################################
 zoxide init fish | source
 starship init fish | source

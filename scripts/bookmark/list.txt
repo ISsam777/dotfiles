@@ -46,3 +46,4 @@ php-youtube https://www.youtube.com/watch?v=zZ6vybT1HQs&t=7653s
 svelte https://svelte.dev/
 js-projects https://www.freecodecamp.org/news/javascript-projects-for-beginners/#heading-how-to-create-a-color-flipper
 js-30DAYS https://courses.wesbos.com/account/access/67e33b5c05585f952aba3a46
+practica-coding https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#java
