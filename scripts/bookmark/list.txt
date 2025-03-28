@@ -7,7 +7,7 @@ monkeytype https://monkeytype.com/
 theverge https://www.theverge.com/
 chess https://www.chess.com/home
 besoccer https://www.besoccer.com/
-https://www.netacad.com/career-paths/network-technician?courseLang=en-US
+netacad https://www.netacad.com/career-paths/network-technician?courseLang=en-US
 frontEndMentor https://www.frontendmentor.io/home
 chatgpt https://chatgpt.com/
 vercel https://vercel.com/issam777s-projects

@@ -17,9 +17,6 @@ map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "general save file" })
 map("v", "Y", "<cmd>'<,'>y+<CR>", { desc = "general copy selected text " })
 
--- map("n", "<leader>nn", "<cmd>set nu!<CR>", { desc = "toggle line number" })
--- map("n", "<leader>nr", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
-
 map("n", "<leader>fm", function()
    require("conform").format({ lsp_fallback = true })
 end, { desc = "general format file" })
@@ -113,5 +110,5 @@ vim.keymap.set({ "n", "v" }, "<M-,>", function()
    require("harpoon.ui").nav_prev()
 end, { desc = "nav prev" })
 --buffers
-map("n", "<leader>bn", "<cmd>bNext<CR>", { desc = "buffer next" })
-map("n", "<leader>bb", "<cmd>bprevious<CR>", { desc = "buffer previous" })
+map("n", "<leader>n", "<cmd>bNext<CR>", { desc = "buffer next" })
+map("n", "<leader>b", "<cmd>bprevious<CR>", { desc = "buffer previous" })
