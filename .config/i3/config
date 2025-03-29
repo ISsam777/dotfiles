@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 # You can also use any non-zero value if you'd like to have a border
 # You can also use any non-zero value if you'd like to have a border
-default_border pixel 2
+default_border pixel 1
 #border indicator on windows:
 
 
@@ -186,10 +186,10 @@ gaps top 30px
 # 	statusline #7aa2f7 
 # 	separator #a9b1d6
 # 	# colour of border, background, and text
-# 	focused_workspace  #7aa2f7 #7aa2f7   #1a1b26
-# 	active_workspace #141c21 #141c21  #c0caf5
-# 	inactive_workspace #141c21 #141c21 #c0caf5
-# 	urgent_workspace #141c21 #f7768e #1a1b26
+# 	focused_workspace  #c0caf5 #c0caf5   #1a1b26
+# 	active_workspace #1a1b26 #1a1b26  #c0caf5
+# 	inactive_workspace #1a1b26 #1a1b26 #c0caf5
+# 	urgent_workspace #1a1b26 #f7768e #1a1b26
 # 	}
 # }
 #################
