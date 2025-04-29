@@ -2,11 +2,6 @@
 function fish_greeting
 	#disable fish greeting
 end
-	
-set -Ux FZF_DEFAULT_OPTS "
-  --color=bg+:#1a1b26,bg:#1a1b26,spinner:#f7768e,hl:#f7768e
-  --color=fg:#a9b1d6,header:#bb9af7,info:#7aa2f7,pointer:#7aa2f7
-  --color=marker:#7aa2f7,fg+:#a9b1d6,prompt:#bb9af7,hl+:#f7768e"
 
 ######### Aliasles #######################
 #ex archiver#
@@ -69,10 +64,10 @@ alias get='aria2c  $(xclip -o)'
 alias y='yazi'
 alias ls='exa'
 alias cd='z'
-alias ps2='/home/issam/Downloads/pcsx2-v2.2.0-linux-appimage-x64-Qt.AppImage'
 alias paste='xclip -o -sel clip'
 alias copy='xclip -sel clip'
 alias v='nvim --clean -c ":colorscheme sorbet"'
+alias N='nvim'
 alias c='clear'
 ##########################################
 zoxide init fish | source
