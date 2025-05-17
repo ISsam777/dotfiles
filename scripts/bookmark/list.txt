@@ -49,3 +49,4 @@ js-30DAYS https://courses.wesbos.com/account/access/67e33b5c05585f952aba3a46
 practica-coding https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#java
 E-commerce_php https://www.geeksforgeeks.org/build-an-e-commerce-web-application-using-html-css-php-and-hosted-using-xampp/
 sdf http://localhost/dev-web/shop.php
+BDD https://chatgpt.com/c/681b27e1-e324-8004-98be-c423f76c3e7a
