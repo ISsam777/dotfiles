@@ -1,5 +1,4 @@
 local map = vim.keymap.set
-
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
 map("i", "<C-h>", "<Left>", { desc = "move left" })
@@ -17,6 +16,8 @@ map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "general save file" })
 map("v", "Y", "<cmd>'<,'>y+<CR>", { desc = "general copy selected text " })
 
+map("n", "qq", "<cmd>wqa<CR>", { desc = "general save file" })
+map("i", "jj", "<Esc>", { desc = "general save file" })
 map("n", "<leader>fm", function()
    require("conform").format({ lsp_fallback = true })
 end, { desc = "general format file" })
