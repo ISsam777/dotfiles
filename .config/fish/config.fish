@@ -69,6 +69,7 @@ alias copy='xclip -sel clip'
 alias v='nvim --clean -c ":colorscheme sorbet"'
 alias N='nvim'
 alias c='clear'
+alias neofetch='neofetch --kitty ~/wallpaper/wallhaven-1q83qg.jpg --size 25% --crop_mode fit'
 ##########################################
 zoxide init fish | source
 starship init fish | source
