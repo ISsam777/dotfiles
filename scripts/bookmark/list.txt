@@ -50,3 +50,4 @@ practica-coding https://github.com/practical-tutorials/project-based-learning?ta
 E-commerce_php https://www.geeksforgeeks.org/build-an-e-commerce-web-application-using-html-css-php-and-hosted-using-xampp/
 sdf http://localhost/dev-web/shop.php
 BDD https://chatgpt.com/c/681b27e1-e324-8004-98be-c423f76c3e7a
+FreeBooks https://freekidsbooks.org/subject/classic-books/

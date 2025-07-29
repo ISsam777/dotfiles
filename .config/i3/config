@@ -161,8 +161,8 @@ mode "resize" {
 #################Colors#########################################
 
  client.focused           #7aa2f7 #7aa2f7 #c0caf5 #7aa2f7  #7aa2f7 
- client.focused_inactive  #1a1b26 #1a1b26 #c0caf5 #1a1b26  #1a1b26
- client.unfocused         #1a1b26 #1a1b26 #c0caf5 #1a1b26  #1a1b26
+ client.focused_inactive  #24283b #24283b #c0caf5 #24283b  #24283b
+ client.unfocused         #24283b #24283b #c0caf5 #24283b  #24283b
 
 ########gaps###############################################
 # Configure 5px of space between windows and to the screen edges.
@@ -170,7 +170,7 @@ gaps inner 15px
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.
 gaps outer 10px
-gaps top 40px
+gaps top 50px
 
 # bar {
 #     status_command i3status 

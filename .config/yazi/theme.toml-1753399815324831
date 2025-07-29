@@ -10,7 +10,7 @@ dark = "tokyo-night"
 # : }}}
 #
 # # : Manager {{{
-[mgr]
+[manager]
 # cwd = { fg = "blue" }
 #
 # # Hovered
