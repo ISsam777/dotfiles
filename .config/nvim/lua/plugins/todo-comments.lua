@@ -1,6 +1,4 @@
 return {
-   "ThePrimeagen/harpoon",
-   "ThePrimeagen/vim-be-good",
    {
       "folke/todo-comments.nvim",
       dependencies = { "nvim-lua/plenary.nvim" },
