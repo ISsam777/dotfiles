@@ -170,27 +170,9 @@ gaps inner 15px
 # Configure an additional 5px of extra space to the screen edges,
 # for a total gap of 10px to the screen edges, and 5px between windows.
 gaps outer 10px
+gaps top 40px
 
-bar {
-    status_command i3status 
-    position top
-    workspace_min_width 24
-    padding 2px 8px 2px 8px
-    strip_workspace_numbers yes
-    font pango:ANAKRON Nerd Font Mono 16
-    separator_symbol " | " 
 
-    	colors {
-	background #1a1b26
-	statusline #7aa2f7 
-	separator #a9b1d6
-	# colour of border, background, and text
-	focused_workspace  #c0caf5 #c0caf5   #1a1b26
-	active_workspace #1a1b26 #1a1b26  #c0caf5
-	inactive_workspace #1a1b26 #1a1b26 #c0caf5
-	urgent_workspace #1a1b26 #f7768e #1a1b26
-	}
-}
 #################
 bindsym $mod+r mode "resize"
 
@@ -205,7 +187,9 @@ exec_always autotiling -w 1 2 3
 # exec xset s noblank
 exec xinput disable 10
 exec dunst
+exec polybar -r
 exec --no-startup-id kanata -c /home/issam/.config/kanata.kbd
+exec_always xrandr --output HDMI-1  --mode 1920x1080 --rate 74.97
 exec_always --no-startup-id picom -b
 exec_always nitrogen --restore 
 
