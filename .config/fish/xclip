@@ -1,0 +1,201 @@
+############################################
+function fish_greeting
+	#disable fish greeting
+end
+
+######### Aliasles #######################
+#ex archiver#
+   function ex -a file
+    if test -f "$file"
+        switch "$file"
+            case "*.tar.bz2"
+                tar xjf $file
+            case "*.tar.xz"
+                tar xf $file
+            case "*.tar.gz"
+                tar xzf $file
+            case "*.bz2"
+                bunzip2 $file
+            case "*.rar"
+                unrar x $file
+            case "*.gz"
+                gunzip $file
+            case "*.tar"
+                tar xf $file
+            case "*.tbz2"
+                tar xjf $file
+            case "*.tgz"
+                tar xzf $file
+            case "*.zip"
+                unzip $file
+            case "*.Z"
+                uncompress $file
+            case "*.7z"
+                7z x $file
+            case "*"
+                echo "'$file' cannot be extracted via ex()"
+        end
+    else
+        echo "'$file' is not a valid file"
+    end
+end
+##rga-fzf##
+function rga-fzf
+    set RG_PREFIX 'rga --files-with-matches'
+    if test (count $argv) -gt 1
+        set RG_PREFIX "$RG_PREFIX $argv[1..-2]"
+    end
+    set -l file $file
+    set file (
+        FZF_DEFAULT_COMMAND="$RG_PREFIX '$argv[-1]'" \
+        fzf --sort \
+            --preview='test ! -z {} && \
+                rga --pretty --context 5 {q} {}' \
+            --phony -q "$argv[-1]" \
+            --bind "change:reload:$RG_PREFIX {q}" \
+            --preview-window='50%:wrap'
+    ) && \
+    echo "opening $file" && \
+    open "$file"
+end
+##others##
+function kbd
+    kanata -c ~/.config/kanata.kbd $argv
+end
+
+function get
+    aria2c (xclip -o) $argv
+end
+
+function y
+    yazi $argv
+end
+function ls
+    exa $argv
+end
+
+function cd
+    z $argv
+end
+
+function paste
+    xclip -o -sel clip $argv
+end
+
+function copy
+    xclip -sel clip $argv
+end
+
+function v
+    nvim --clean -c "colorscheme sorbet" $argv
+end
+
+function c
+    clear
+end
+##########################################
+zoxide init fish | source
+starship init fish | source
+set -gx EDITOR nvim 
+batman --export-env | source
+############################################
+function fish_greeting
+	#disable fish greeting
+end
+
+######### Aliasles #######################
+#ex archiver#
+   function ex -a file
+    if test -f "$file"
+        switch "$file"
+            case "*.tar.bz2"
+                tar xjf $file
+            case "*.tar.xz"
+                tar xf $file
+            case "*.tar.gz"
+                tar xzf $file
+            case "*.bz2"
+                bunzip2 $file
+            case "*.rar"
+                unrar x $file
+            case "*.gz"
+                gunzip $file
+            case "*.tar"
+                tar xf $file
+            case "*.tbz2"
+                tar xjf $file
+            case "*.tgz"
+                tar xzf $file
+            case "*.zip"
+                unzip $file
+            case "*.Z"
+                uncompress $file
+            case "*.7z"
+                7z x $file
+            case "*"
+                echo "'$file' cannot be extracted via ex()"
+        end
+    else
+        echo "'$file' is not a valid file"
+    end
+end
+##rga-fzf##
+function rga-fzf
+    set RG_PREFIX 'rga --files-with-matches'
+    if test (count $argv) -gt 1
+        set RG_PREFIX "$RG_PREFIX $argv[1..-2]"
+    end
+    set -l file $file
+    set file (
+        FZF_DEFAULT_COMMAND="$RG_PREFIX '$argv[-1]'" \
+        fzf --sort \
+            --preview='test ! -z {} && \
+                rga --pretty --context 5 {q} {}' \
+            --phony -q "$argv[-1]" \
+            --bind "change:reload:$RG_PREFIX {q}" \
+            --preview-window='50%:wrap'
+    ) && \
+    echo "opening $file" && \
+    open "$file"
+end
+##others##
+function kbd
+    kanata -c ~/.config/kanata.kbd $argv
+end
+
+function get
+    aria2c (xclip -o) $argv
+end
+
+function y
+    yazi $argv
+end
+function ls
+    exa $argv
+end
+
+function cd
+    z $argv
+end
+
+function paste
+    xclip -o -sel clip $argv
+end
+
+function copy
+    xclip -sel clip $argv
+end
+
+function v
+    nvim --clean -c "colorscheme sorbet" $argv
+end
+
+function c
+    clear
+end
+##########################################
+zoxide init fish | source
+starship init fish | source
+set -gx EDITOR nvim 
+batman --export-env | source
+############################################ function fish_greeting 	#disable fish greeting end  ######### Aliasles ####################### #ex archiver#    function ex -a file     if test -f "$file"         switch "$file"             case "*.tar.bz2"                 tar xjf $file             case "*.tar.xz"                 tar xf $file             case "*.tar.gz"                 tar xzf $file             case "*.bz2"                 bunzip2 $file             case "*.rar"                 unrar x $file             case "*.gz"                 gunzip $file             case "*.tar"                 tar xf $file             case "*.tbz2"                 tar xjf $file             case "*.tgz"                 tar xzf $file             case "*.zip"                 unzip $file             case "*.Z"                 uncompress $file             case "*.7z"                 7z x $file             case "*"                 echo "'$file' cannot be extracted via ex()"         end     else         echo "'$file' is not a valid file"     end end ##rga-fzf## function rga-fzf     set RG_PREFIX 'rga --files-with-matches'     if test (count $argv) -gt 1         set RG_PREFIX "$RG_PREFIX $argv[1..-2]"     end     set -l file $file     set file (         FZF_DEFAULT_COMMAND="$RG_PREFIX '$argv[-1]'" \         fzf --sort \             --preview='test ! -z {} && \                 rga --pretty --context 5 {q} {}' \             --phony -q "$argv[-1]" \             --bind "change:reload:$RG_PREFIX {q}" \             --preview-window='50%:wrap'     ) && \     echo "opening $file" && \     open "$file" end ##others## function kbd     kanata -c ~/.config/kanata.kbd $argv end  function get     aria2c (xclip -o) $argv end  function y     yazi $argv end function ls     exa $argv end  function cd     z $argv end  function paste     xclip -o -sel clip $argv end  function copy     xclip -sel clip $argv end  function v     nvim --clean -c "colorscheme sorbet" $argv end  function c     clear end ########################################## zoxide init fish | source starship init fish | source set -gx EDITOR nvim  batman --export-env | source

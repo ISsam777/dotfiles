@@ -39,6 +39,7 @@ end
         echo "'$file' is not a valid file"
     end
 end
+##rga-fzf##
 function rga-fzf
     set RG_PREFIX 'rga --files-with-matches'
     if test (count $argv) -gt 1
@@ -57,19 +58,43 @@ function rga-fzf
     echo "opening $file" && \
     open "$file"
 end
-#################################################################/ALIASES/##########################################################################################
-alias kbd='kanata -c ~/.config/kanata.kbd'
-alias get='aria2c  $(xclip -o)'
-alias y='yazi'
-alias ls='exa'
-alias cd='z'
-alias paste='xclip -o -sel clip'
-alias copy='xclip -sel clip'
-alias v='nvim --clean -c ":colorscheme sorbet"'
-alias c='clear'
+##others##
+function kbd
+    kanata -c ~/.config/kanata.kbd $argv
+end
+
+function get
+    aria2c (xclip -o) $argv
+end
+
+function y
+    yazi $argv
+end
+function ls
+    exa $argv
+end
+
+function cd
+    z $argv
+end
+
+function paste
+    xclip -o -sel clip $argv
+end
+
+function copy
+    xclip -sel clip $argv
+end
+
+function v
+    nvim --clean -c "colorscheme sorbet" $argv
+end
+
+function c
+    clear
+end
 ##########################################
 zoxide init fish | source
 starship init fish | source
 set -gx EDITOR nvim 
-export BAT_THEME="tokyonight_night"
 batman --export-env | source
