@@ -184,7 +184,9 @@ bindsym $mod+t exec thunar
 bindsym Print exec flameshot gui 
 ### Autostart
 exec_always autotiling -w 1 2 3  
-# exec xset s noblank
+exec xset s noblank
+exec xset s off
+exec xset -dpms
 exec xinput disable 10
 exec dunst
 exec polybar -r

@@ -59,7 +59,6 @@ function rga-fzf
 end
 #################################################################/ALIASES/##########################################################################################
 alias kbd='kanata -c ~/.config/kanata.kbd'
-alias rsh='redshift -l 33.38545:6.80422'
 alias get='aria2c  $(xclip -o)'
 alias y='yazi'
 alias ls='exa'
@@ -67,9 +66,7 @@ alias cd='z'
 alias paste='xclip -o -sel clip'
 alias copy='xclip -sel clip'
 alias v='nvim --clean -c ":colorscheme sorbet"'
-alias N='nvim'
 alias c='clear'
-alias neofetch='neofetch --kitty ~/wallpaper/wallhaven-1q83qg.jpg --size 25% --crop_mode fit'
 ##########################################
 zoxide init fish | source
 starship init fish | source
