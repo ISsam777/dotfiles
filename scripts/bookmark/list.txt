@@ -26,3 +26,4 @@ discord https://discord.com/channels/@me
 busuu https://www.busuu.com/dashboard/timeline/b1
 nytimes https://www.nytimes.com/
 typeracer https://play.typeracer.com/
+shamela https://shamela.ws/
